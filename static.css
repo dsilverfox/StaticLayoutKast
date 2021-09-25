@@ -6,6 +6,7 @@ body {
     background-color: transparent;
     height: 75px;
     position: fixed;
+    width: 100%;
   }
 
   .navbar a {
@@ -130,6 +131,27 @@ body {
     text-align: center;
   }
 
+  .container {
+    flex: 1;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 20px 15px;
+    padding-left:250px;
+    padding-right: 250px;
+  }
+
+  .container li {
+    flex-grow: 1;
+    flex-basis: auto;
+    list-style-type:none;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
   #quote {
     text-align:center;
     color: gray;
